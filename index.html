@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>olivierdeprovence</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="logo"
+        ><img src="img/logo.png" alt="" />
+        <p>olivierdeprovence</p></a
+      >
+      <div class="menu-icon">
+        <div class="bar">Home</div>
+        <div class="bar">Olivier Taille</div>
+        <div class="bar">Olives Oarietes</div>
+        <div class="bar">Olivier Maroc</div>
+        <div class="bar">Livres</div>
+      </div>
+      <ul class="nav-bar nav-links">
+        <li><a href="index.html" class="init">Home</a></li>
+        <li><a href="olivier-taille.html">Olivier Taille</a></li>
+        <li><a href="lives-oarietes.html">Olives Oarietes</a></li>
+        <li><a href="olives-maroc.html">Olivier Maroc</a></li>
+        <li><a href="livres.html">Livres</a></li>
+      </ul>
+      <div class="social-media">
+        <a
+          href="https://www.facebook.com/olivierdeprovencecarouge/"
+          target="_blank"
+          ><img src="img/facebook.png" alt=""
+        /></a>
+        <a
+          href="https://www.instagram.com/olivierdeprovencecarouge/"
+          target="_blank"
+          ><img src="img/instagram.png" alt=""
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img src="img/twitter.png" alt=""
+        /></a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=41223420450&text&type=phone_number&app_abse"
+          target="_blank"
+          ><img src="img/whatsapp.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="left-side">
+        <h1 class="title">
+          Valorisez vos Branches <br /><span class="tree-style">D'Olivier</span> EN
+          les broyant.
+        </h1>
+        <p class="description">
+          Si l’olive se souvient de son planteur Son huile se transformera en
+          larmes <br>Oh ! sagesse des ancêtres, notre corps pour vous deviendra un
+          habit de protection.
+        </p>
+        <button class="join" id="scrollButton">See More!</button>
+      </div>
+      <div class="right-side"></div>
+    </div>
+    <div class="buttom-side">
+      <div name="" id="" class="cards">
+        <div class="card1">
+          <img src="img/evolution-desplazable.jpg" alt="" />
+          <h3>Broyage des branches d’olivier</h3>
+          <p>
+            Lors de la<strong> <a href="olivier-taille.html">taille de l’olivier</a>
+            </strong> vous êtes
+            nombreux à vous demander que faire des branches coupées de
+            l’olivier<br />
+            Que faire des branches coupées ?<br />
+            Les bruler semble être la pratique la plus courante.
+          </p>
+        </div>
+        <div class="card2">
+          <img src="img/olive-tree-shaker.jpg" alt="" />
+          <h3>Récolte des olives : le matériel</h3>
+          <p>
+            Les meilleurs sont en bois ni trop léger pour être efficace ni trop
+            lourd<br />
+            pour ne pas blesser les branches et être maniable. Un bois qui devra
+            en outre être<br />
+            résistant mais flexible, imputrescible, rectiligne et assez étroit
+            sur une grande<br />
+            longueur.
+          </p>
+        </div>
+        <div class="card3">
+          <img src="img/olive-igor.jpg" alt="" />
+          <h3>LES ENNEMIS ET MALADIES DE L’OLIVIER</h3>
+          <p>
+            Les ennemis et maladies de l’olivier sont nombreux aussi il convient
+            d’être attentif visuellement à vos oliviers pour pouvoir intervenir
+            le plus rapidement possible. <br />
+          </p>
+        </div>
+      </div>
+      <div class="article-parent">
+        <h3>A LIRE EGALEMENT</h3>
+        <div class="articles">
+          <div class="article1 article">
+            <img src="/img/entretien-olivier.jpg" alt="">
+            <h5>ENTRETIEN DE L'OLIVIER</h5>
+            <li class="writer">Par olive</li>
+          </div>
+          <div class="article2 article">
+            <img src="img/wild-olive-tree-leaves.jpg" alt="">
+            <h5>Les symptômes des carences de l’olivier</h5>
+            <li class="writer">Par olive</li>
+          </div>
+          <div class="article3 article">
+            <img src="img/styles-de-taille-olivier.jpg" alt="">
+            <h5>Les différents styles de taille de l’olivier</h5>
+              <li class="writer">Par olive</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <p class="copyrights">
+          Olivierdeprovence.com ©2023 Tous droits réservés
+        </p>
+      </div>
+    </div>
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+      // Add an event listener to the button
+document.getElementById('scrollButton').addEventListener('click', function () {
+    // Define how much you want to scroll down (in pixels)
+    var scrollAmount = 800; // You can change this value
+
+    // Scroll down
+    window.scrollBy({
+        top: scrollAmount,
+        behavior: 'smooth' // This makes the scrolling smooth
+    });
+});
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,486 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-image: url(img/background.jpg);
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 50px;
+}
+
+.logo {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 6px 20px;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.logo img {
+  width: 20px;
+}
+
+.logo p {
+  padding-top: 7px;
+  padding-left: 6px;
+}
+
+.logo p:hover {
+  color: green;
+  transition: color 0.5s;
+  box-shadow: 0 0 3px white;
+}
+
+.logo:hover {
+  transform: scale(1.09);
+  transition: transform 0.9s;
+  box-shadow: 0 0 3px white;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  width: 500px;
+  margin-right: 220px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: rgba(255, 255, 255, 0.697);
+}
+
+.nav-bar a:hover {
+  color: white;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.nav-bar-maroc li a{
+  color: black !important;
+}
+
+.nav-bar-maroc li a:hover {
+  color: rgb(83, 117, 77) !important;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none; /* Hide by default on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: flex; /* Show on smaller screens */
+  }
+
+  .social-media {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: none; /* Hide on smaller screens initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust to your needs */
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.show {
+    display: flex; /* Show when menu is clicked */
+  }
+}
+
+.init {
+  color: white !important;
+}
+
+.init:hover {
+  color: rgb(195, 255, 213) !important;
+}
+
+.social-media {
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 30px;
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.social-media a {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a img {
+  width: 50%;
+}
+
+.social-media a img:hover {
+  transform: scale(1.3);
+  transition: transform 0.3s;
+  box-shadow: 0 0 6px rgb(0, 0, 0);
+  border-radius: 100px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-maroc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ABFC27;
+}
+
+.tourism {
+  background-color: #75FF75;
+  width: 900px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 100px;
+}
+
+.left-side img {
+  width: 564px;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+
+.right-side {
+  height: 600px;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.title2 {
+  margin-bottom: 40px;
+}
+
+
+.description {
+  margin-top: 20px;
+  color: white;
+  width: 90%;
+}
+
+.after-desc::after {
+  content: "";
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.after-desc:hover::after {
+  content: "Tous les cinq à dix ans, un élagage est nécessaire afin d’éviter que l’arbre ne prenne trop de hauteur. Il existe une méthode communément appelée la taille dite du midi de la France qui favorise la production importante d’olives sans tailler trop souvent et qui consiste à évider le centre de l’arbre afin de favoriser l’insolation des fruits. Mais attention, le soleil inflige souvent de graves brûlures à l’écorce de l’olivier. Un dicton Provençale dit : la feuille au soleil, l’écorce à l’ombre.";
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.amazon-product {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  padding: 90px;
+}
+
+.amazon-product h3 {
+  text-align: center;
+  color: #0d1e0d;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.products a {
+  color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.amazon-logo {
+  width: 20px;
+}
+
+.product button {
+  width: 90px;
+  height: 30px;
+}
+
+.product {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 237px;
+  height: 400px;
+  padding: 50px 40px;
+  font-size: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px black;
+  transition: transform 0.5s;
+}
+
+.product:hover {
+  transform: scale(1.07);
+  transition: transform 0.5s;
+}
+
+.product-img {
+  width: 80%;
+  height: 50%;
+}
+
+.product-img2 {
+  height: 35%;
+}
+
+.stars {
+  width: 50%;
+}
+
+.product-buttom a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-buttom a button {
+  background-color: #007600;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+}
+
+.tree-style {
+  color: rgb(13, 30, 13);
+}
+
+.join {
+  background-color: rgb(13, 30, 13);
+  color: white;
+  padding: 10px 110px;
+  margin-top: 40px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 19px;
+  transition: transform 0.4s;
+}
+
+.join:hover {
+  transform: scale(1.09);
+  transition: transform 0.4s;
+  cursor: pointer;
+  color: rgb(179, 255, 179);
+  box-shadow: 0 7px 10px black;
+}
+
+.rose {
+  width: 100%;
+}
+
+.buttom-side {
+  background-image: url(img/background-2.jpg);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.cards div {
+  width: 25%;
+  height: 70%;
+  color: white;
+  background-color: rgb(11, 17, 11);
+  margin: 50px;
+  padding: 20px 20px;
+  transition: transform 1s;
+  border-radius: 20px;
+}
+
+.cards h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cards a {
+  color: rgb(104, 193, 104);
+  text-decoration: underline;
+}
+
+.cards div:hover {
+  transform: scale(1.09);
+  transition: transform 1s;
+  box-shadow: 0 0 9px rgb(0, 0, 0);
+}
+
+.cards div::after {
+  content: ""; /* Set initial content to an empty string */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out; /* Add a transition for smooth effect */
+}
+
+.card1:hover::after {
+  content: "Le problème est qu'une oliveraie est par définition un endroit planté d'arbres. Malgré toutes les précautions qu'on peut prendre, il arrivera toujours un moment où des flammes trop hautes, poussées par un coup de vent intempestif, iront lécher une branche qui perdra ses feuilles quelques jours plus tard. Tout cela n'est rien comparé aux incendies de forêt qui sont déclenchés pour les mêmes raisons chaque année.";
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.card2:hover::after {
+  content: "Le choix est assez limité, se restreignant au châtaignier, au noisetier et au bambou. Pour récolter les olives depuis le sol, une longueur considérable est requise. Vous pourriez seulement atteindre les branches les plus hautes, mais au-delà de 4 mètres, cela exige une endurance athlétique pour maintenir une efficacité toute la journée.";
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.card3:hover::after {
+  content: "Un pas significatif dans la lutte contre les insectes et les maladies nuisibles à l'olivier a été réalisé par les chercheurs de l'INRA, qui sont parmi les meilleurs au monde dans ce domaine. Les attaques et les traitements varient en fonction de l'âge de l'olivier, qu'il soit jeune ou déjà parvenu à maturité productive. Les insectes sont généralement présents du début du printemps à l'automne. Les attaques peuvent être repoussées, par exemple, en utilisant un traitement insecticide à base de 'Karaté Vert' à raison de 0,03 litre de produit pour 100 litres d'eau.";
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.cards div img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.article-parent {
+  background-color: white;
+  padding: 40px;
+}
+.articles {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.article {
+  background-color: aquamarine;
+  width: 270px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+  transition: transform 0.4s;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px black;
+}
+
+.article:hover {
+  transform: scale(1.09);
+  transition: transform 0.4s;
+  border-radius: 20px;
+}
+
+.article h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.writer {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.articles img {
+  width: 100%;
+  height: 75%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.article2 img {
+  height: 66%;
+}
+
+.footer {
+  background-color: rgb(13, 30, 13);
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyrights {
+  color: white;
+}
+
+.dark-title {
+  color: white !important;
+}
+
+.dark-list {
+  color: white;
+}
