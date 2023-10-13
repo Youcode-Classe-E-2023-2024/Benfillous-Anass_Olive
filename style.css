@@ -99,6 +99,27 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .product {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .last-livre {
+    margin: 0 !important;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
   .menu-icon {
     display: flex; /* Show on smaller screens */
   }
@@ -107,15 +128,23 @@ a {
     display: none !important;
   }
 
+  .logo p {
+    display: none;
+  }
+
+.logo {
+  height: 30px;
+}
+
   .nav-bar {
     display: none; /* Hide on smaller screens initially */
     flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust to your needs */
-    left: 0;
+    padding: 20px;
+    justify-content: flex-end;
     background-color: #fff;
     width: 100%;
     z-index: 1;
+    margin: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
   }
@@ -124,8 +153,6 @@ a {
     display: flex; /* Show when menu is clicked */
     width: 20%;
     background-color: black;
-    left: 500px;
-
   }
 
   .buttom-side {
@@ -133,14 +160,21 @@ a {
   }
 
   .cards {
-    width: 70% !important;
+    width: 100% !important;
     flex-direction: column;
+    margin: 0 !important;
+  }
 
+  .cards div {
+    width: 70% !important;
+    align-self: center !important;
   }
 
   .articles {
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    margin: 0 !important;
   }
 
   .nav-bar-maroc li a {
