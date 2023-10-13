@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>olivierdeprovence</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <body
     style="background-image: url(img/background-2.jpg); background-size: 100%"
@@ -14,7 +15,14 @@
         ><img src="img/logo.png" alt="" />
         <p>olivierdeprovence</p></a
       >
-      <ul class="nav-bar">
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-bar nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="olivier-taille.html" class="init">Olivier Taille</a></li>
         <li><a href="lives-oarietes.html">Olives Oarietes</a></li>
@@ -42,7 +50,7 @@
           favoriser la fructification ou de permettre la reprise d’un olivier
           laissé à l’abandon.
         </p>
-        <button class="join" id="scrollButton" type="submit">SEE MORE!</button>
+        <button class="join" id="scrollButton" type="submit">Voir Plus!</button>
         <img src="img/tailler-un-olivier.jpg" alt="" />
         <h3 class="title title2" style="margin-top: 190px">
           Quand tailler un <span class="tree-style">olivier</span>
@@ -127,7 +135,7 @@
           <a href="">
             <div class="product">
               <img class="product-img product-img2" src="img/418+0ohm9TL._SL500_.jpg" alt="" />
-              <p>Tenartis 254 Sécateu...</p>
+              <p>ALKET 1162 Professionnel...</p>
               <img class="stars" src="img/amazon-stars.png" alt="" />
               <div class="product-buttom">
                 <a href="https://www.amazon.com">
@@ -142,7 +150,7 @@
           <a href="">
             <div class="product">
               <img class="product-img" src="img/31zH79V+vaL._SL500_.jpg" alt="" />
-              <p>Tenartis 254 Sécateu...</p>
+              <p>Tijera de Jardín B/M Ramas duras y...</p>
               <img class="stars" src="img/amazon-stars.png" alt="" />
               <div class="product-buttom">
                 <a href="https://www.amazon.com">
@@ -162,7 +170,7 @@
           <a href="">
             <div class="product">
               <img class="product-img" src="img//41+WQzE2U9L._SL500_.jpg" alt="" />
-              <p>Tenartis 254 Sécateu...</p>
+              <p>KOMOK Sécateur Électrique Sans Fil..</p>
               <img class="stars" src="img/amazon-stars.png" alt="" />
               <div class="product-buttom">
                 <a href="https://www.amazon.com">
@@ -177,7 +185,7 @@
           <a href="">
             <div class="product">
               <img class="product-img" src="img/51B-veDh9gL._SL500_.jpg" alt="" />
-              <p>Tenartis 254 Sécateu...</p>
+              <p>SisDruo Cisaille à Élaguer Électrique...</p>
               <img class="stars" src="img/amazon-stars.png" alt="" />
               <div class="product-buttom">
                 <a href="https://www.amazon.com">
@@ -192,7 +200,7 @@
           <a href="">
             <div class="product">
               <img class="product-img" src="img/31zH79V+vaL._SL500_.jpg" alt="" />
-              <p>Tenartis 254 Sécateu...</p>
+              <p>Bravolu Sécateur électrique Sans Fil...</p>
               <img class="stars" src="img/amazon-stars.png" alt="" />
               <div class="product-buttom">
                 <a href="https://www.amazon.com">
@@ -216,6 +224,7 @@
           <li class="writer">Par olive</li>
         </div>
         <div class="article2 article">
+          <img src="img/wild-olive-tree-leaves.jpg" alt="">
           <h5>Les symptômes des carences de l’olivier</h5>
           <li class="writer">Par olive</li>
         </div>
@@ -234,12 +243,19 @@
     </div>
   </div>
     <script>
+
+const menuIcon = document.querySelector(".menu-icon");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
       // Add an event listener to the button
       document
         .getElementById("scrollButton")
         .addEventListener("click", function () {
           // Define how much you want to scroll down (in pixels)
-          var scrollAmount = 300; // You can change this value
+          var scrollAmount = 600; // You can change this value
 
           // Scroll down
           window.scrollBy({
